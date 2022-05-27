@@ -1,4 +1,4 @@
-/* import { datas } from 'a .js file'; OR  a database table*/ //get coordinates of parcels
+import { datas } from 'a .js file'; OR  a database table */ //get coordinates of parcels
 
 const side = document.getElementById("clicked")
 const closenav = document.querySelector(".closebtn");
