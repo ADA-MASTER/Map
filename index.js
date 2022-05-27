@@ -1,4 +1,4 @@
-import { datas } from 'a .js file'; OR  a database table */ //get coordinates of parcels
+import {datas} from "./coordinate.js"
 
 const side = document.getElementById("clicked")
 const closenav = document.querySelector(".closebtn");
