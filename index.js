@@ -1,4 +1,4 @@
-import {datas} from "./coordinate.js"
+import {datas} from "./coordinates.js"
 
 const side = document.getElementById("clicked")
 const closenav = document.querySelector(".closebtn");
