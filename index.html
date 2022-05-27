@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Hello, world!</title>
+    <style>
+        #mySvg {
+            transform: scale(1); /* starting zoom level with css */
+            background-color: #485063; /* You can set the map background color here */
+            border:solid 1px; 
+            position:relative;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+        .mapContainer{
+            border: solid 1px blue; 
+            margin-top: 100px; 
+            margin-left: 50px; 
+            width: 2000px; 
+            height: 2000px; 
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- map start -->
+    <div class="mapContainer"> <!-- The area where the map is placed -->
+        <svg id="mySvg" width="1804" height="1804" ></svg> <!-- The area where the parcels are placed / You can edit the right and top edges by changing the width and height of this tag.-->
+    </div>
+    <!-- map end -->
+
+
+    <!-- sidebar start -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <div id="clicked">
+
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    
+
+    <!-- JS / Boostrap  -->
+    <script type="module" src="./index.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
